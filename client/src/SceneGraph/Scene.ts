@@ -2,14 +2,7 @@ import * as bjs from '@babylonjs/core/Legacy/legacy';
 import { SceneElement } from './SceneElement';
 import { IScene, ISceneElement, ISceneDataSource, ISceneDataSink } from './SceneGraphInterfaces';
 import Logger from '../Utils/Logger';
-import {
-    simpleSky512,
-    fontConthrax,
-    simpleCubeModel,
-    markerModel,
-    smoothCubeModel,
-    themeButton
-} from '../Assets/AssetList';
+
 
 import { AssetManager } from './AssetManager';
 import {LoadAssetHandler} from './Procs';

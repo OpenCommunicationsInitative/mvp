@@ -1,9 +1,7 @@
 import * as bjs from '@babylonjs/core/Legacy/legacy';
-import { morningSkyRippleEnv } from '../../../Assets/AssetList';
-import { AssetManager } from "../../../SceneGraph/AssetManager";
-import { SceneFormatType } from '../../../SceneGraph/Enums';
 import { Theme } from "./Theme";
 import { OCIClientScene } from '../../OCIClientScene';
+import { morningSkyRippleEnv } from '../../Assets/AssetList';
 
 export class MorningTheme extends Theme
 {

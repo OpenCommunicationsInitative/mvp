@@ -1,7 +1,7 @@
 import * as bjs from '@babylonjs/core/Legacy/legacy';
 import { Scene } from './Scene';
-import { pngTwentyColorPalette } from "../Assets/AssetList";
 import { GLSGColor } from './Enums';
+import { pngTwentyColorPalette } from '../OCIClient/Assets/AssetList';
 
 export class SolidParticleMaterial extends bjs.PBRMaterial
 {

@@ -1,5 +1,5 @@
 import * as bjs from '@babylonjs/core/Legacy/legacy';
-import 'babylonjs-inspector';
+//import 'babylonjs-inspector';
 import "@babylonjs/loaders/glTF";
 import * as Tone from 'tone/build/esm';
 import { StateMachine, Interpreter, Machine, interpret } from 'xstate';
@@ -384,12 +384,12 @@ export class OCIClientScene extends Scene //implements IMessageBusClient
     {
         if (this.inspectorIsVisible)
         {
-            this.bjsScene.debugLayer.hide();
+            //this.bjsScene.debugLayer.hide();
             this.inspectorIsVisible = false;
         }
         else
         {
-            this.bjsScene.debugLayer.show({overlay:true});
+            //this.bjsScene.debugLayer.show({overlay:true});
             this.inspectorIsVisible = true;
         }
     }

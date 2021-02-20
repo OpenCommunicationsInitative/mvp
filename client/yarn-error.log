@@ -1,0 +1,103 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\james\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\james\AppData\Local\Microsoft\WindowsApps;C:\Users\james\.dotnet\tools;C:\Program Files\nodejs\;C:\Users\james\AppData\Local\Microsoft\WindowsApps;C:\Users\james\AppData\Local\GitHubDesktop\bin;C:\Users\james\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\james\AppData\Roaming\npm;C:\Users\james\.dotnet\tools
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.1.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\james\Documents\GitHub\mvp\client\package.json: Unexpected token / in JSON at position 510
+      at JSON.parse (<anonymous>)
+      at C:\Users\james\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\james\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\james\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "oci-client",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "npm run build:dev",
+      "build:dev": "webpack-dev-server  --inline --env dev --mode none --https   --max-old-space-size=8192",
+      "build:prod": "webpack --env prod --mode production",
+      "clean": "rimraf dist"
+    },
+    "author": "ervin",
+    "devDependencies": {
+      "autoprefixer": "^8.6.0",
+      "babylon-file-loader": "^0.2.1",
+      "babylonjs": "^4.1.0",
+      "babylonjs-gui": "^4.1.0",
+      //"babylonjs-inspector": "^4.1.0",
+      "babylonjs-loaders": "^4.1.0",
+      "babylonjs-materials": "^4.1.0",
+      "babylonjs-post-process": "^4.1.0",
+      "clean-webpack-plugin": "^0.1.19",
+      "copy-webpack-plugin": "^4.0.1",
+      "css-loader": "^3.2.0",
+      "hard-source-webpack-plugin": "^0.13.1",
+      "html-webpack-plugin": "^3.2.0",
+      "node-sass": "^4.11.0",
+      "postcss-loader": "^2.1.5",
+      "sass-loader": "^7.0.2",
+      "ts-loader": "^4.4.2",
+      "typescript": "^3.0.1",
+      "webpack": "^4.43.0",
+      "webpack-cli": "^3.3.11",
+      "webpack-dev-server": "^3.2.1",
+      "webpack-md5-hash": "0.0.6"
+    },
+    "dependencies": {
+      "@babylonjs/core": "^4.1.0",
+      "@babylonjs/gui": "^4.1.0",
+      "@babylonjs/loaders": "^4.1.0",
+      "@babylonjs/materials": "^4.1.0",
+      "@sweetalert2/theme-bootstrap-4": "^3.2.0",
+      "@types/jquery": "^3.3.34",
+      "@types/node": "^11.13.8",
+      "ably": "^1.1.5",
+      "aws-amplify": "^3.0.20",
+      "axios": "^0.19.2",
+      "currency.js": "^1.2.2",
+      "dotenv": "^8.2.0",
+      "dotenv-webpack": "^1.8.0",
+      "file-loader": "^4.2.0",
+      "jquery": "^3.4.1",
+      "mini-css-extract-plugin": "^0.4.0",
+      "moment": "^2.24.0",
+      "normalize.css": "^8.0.1",
+      "queue-typescript": "^1.0.1",
+      "react": "^16.13.1",
+      "react-dom": "^16.13.1",
+      "rimraf": "^3.0.2",
+      "sorted-btree": "^1.2.3",
+      "source-map": "^0.7.3",
+      "startaudiocontext": "^1.2.1",
+      "strongly-typed-events": "^1.4.10",
+      "sweetalert2": "^9.17.1",
+      "tone": "^14.7.39",
+      "ttf-loader": "^1.0.2",
+      "url-loader": "^2.2.0",
+      "xstate": "^4.3.3"
+    },
+    "resolutions": {
+      "terser": "3.17.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
