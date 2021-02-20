@@ -1,16 +1,7 @@
 # OCI/P Client
 
-## Used Technologies
-
-- **BabylonJS**
-- **Webpack**
-  - HMR (Hot Module Replacement/Reloading)
-- **WebGL** 
-  - BabylonJS (3D)
----
-
 ## Prerequisites:
- * [NodeJS](https://nodejs.org/) >= 8.9.4
+ * [NodeJS](https://nodejs.org/) >= 12.1
  * [VSCode](https://code.visualstudio.com/) (ideally), or VS2017
 
 ## Getting Started:
@@ -31,6 +22,6 @@ Please run `yarn start`
 You have two choices when it come at how your preffer to run it. You can either use the command line or the build-in run command.
 
 ## View your application running
-Browse to [http://localhost:8080](http://localhost:8080)
+Browse to [https://localhost:8080](http://localhost:8080)
 
 ----
