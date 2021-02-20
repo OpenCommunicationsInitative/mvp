@@ -90,8 +90,8 @@ export class OCIClientScene extends Scene //implements IMessageBusClient
     private sceneBaseUrl = "/";
 
     assetsPath: Array<Object> = [
-        {type: 'mesh', name:'simplecube', url: this.sceneBaseUrl + "/models/", fileName: 'simplecube.babylon'},
-        {type: 'mesh', name:'SmoothCube', url: this.sceneBaseUrl+ "/models/", fileName: 'SmoothCube.babylon'},
+      //  {type: 'mesh', name:'simplecube', url: this.sceneBaseUrl + "/models/", fileName: 'simplecube.babylon'},
+      //  {type: 'mesh', name:'SmoothCube', url: this.sceneBaseUrl+ "/models/", fileName: 'SmoothCube.babylon'},
     ];
 
     private stateMachine: StateMachine<OCICLientSceneContext, OCICLientSceneSchema, OCICLientSceneEventType>;
