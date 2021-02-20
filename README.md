@@ -1,4 +1,4 @@
-# Global Liquidity SceneGraph Examples
+# OCI/P Client
 
 ## Used Technologies
 
@@ -6,8 +6,7 @@
 - **Webpack**
   - HMR (Hot Module Replacement/Reloading)
 - **WebGL** 
-  - BabylonJS (3D modeling)
-- **Bitcoin** 
+  - BabylonJS (3D)
 ---
 
 ## Prerequisites:
