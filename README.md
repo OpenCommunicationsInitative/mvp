@@ -10,7 +10,7 @@
 ---
 
 ## Prerequisites:
- * [NodeJS](https://nodejs.org/) >= 8.9.4
+ * [NodeJS](https://nodejs.org/) >= 12.1
  * [VSCode](https://code.visualstudio.com/) (ideally), or VS2017
 
 ## Getting Started:
