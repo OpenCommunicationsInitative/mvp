@@ -1,14 +1,5 @@
 # OCI/P Client
 
-## Used Technologies
-
-- **BabylonJS**
-- **Webpack**
-  - HMR (Hot Module Replacement/Reloading)
-- **WebGL** 
-  - BabylonJS (3D)
----
-
 ## Prerequisites:
  * [NodeJS](https://nodejs.org/) >= 12.1
  * [VSCode](https://code.visualstudio.com/) (ideally), or VS2017
