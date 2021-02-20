@@ -83,9 +83,9 @@ export class Scene implements IScene
     public loadAssets()
     {
         AssetManager.Instance.init(this);
-        AssetManager.Instance.load(this.assetsPath, () => {
+      //  AssetManager.Instance.load(this.assetsPath, () => {
             EventBus.Instance.emit("SCENE_ASSET_LOADED");
-        });
+     //   });
     }
 
     public unloadAssets()

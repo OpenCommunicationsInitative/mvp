@@ -21,7 +21,7 @@ export class Experience implements IExperience
     public load()
     {
         // this.onLoad();
-        this.loadAssets();
+       
 
         EventBus.Instance.eventHandler.subscribe((p, r) => {
             if (r === 'EXPERIENCE_ASSET_LOADED') {
@@ -29,6 +29,8 @@ export class Experience implements IExperience
                 this.onLoad();
             }
         });
+
+        this.loadAssets();
     }
 
     public unload()
@@ -53,9 +55,9 @@ export class Experience implements IExperience
         SceneManager.Instance.LoadScene(emptyScene, this.canvas, ViewportPosition.Top);
         AssetManager.Instance.init(emptyScene);
        
-        AssetManager.Instance.load(this.assetsPath, () => {
+       // AssetManager.Instance.load(this.assetsPath, () => {
             EventBus.Instance.emit("EXPERIENCE_ASSET_LOADED");
-        });
+      //  });
     }
 
     public unloadAssets()
