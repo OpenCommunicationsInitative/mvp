@@ -1,0 +1,342 @@
+@import '/node_modules/normalize.css/normalize.css';
+@import 'modules/variables';
+@import 'modules/base';
+
+@font-face {
+    font-family: "Conthrax";
+    src: url(../Assets/fonts/conthrax-sb.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../Assets/fonts/OpenSans-Bold.ttf);
+}
+
+.signup-page-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    position: relative;
+    font-family: OpenSans;
+
+    .signup-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10%;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 44px;
+            font-weight: 400;
+            font-family: "Conthrax";
+            font-weight: bold;
+        }
+
+        .input-row {
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            margin-bottom: 10px;
+            align-items: center;
+
+            input {
+                width: 100%;
+                padding-left: 10px;
+                background-color: rgba(22, 22, 22, 0.8);
+                position: relative;
+                z-index: 1;
+                height: 60px;
+                margin-bottom: 20px;
+                padding: 25px;
+                border: 1px solid hsla(0, 0%, 100%, 0.07);
+                border-radius: 10px;
+                background-color: rgba(22, 22, 22, 0.8);
+                -webkit-transition: border 400ms ease;
+                transition: border 400ms ease;
+                color: #fff;
+                font-size: 18px;
+                line-height: 1em;
+
+                &:focus {
+                    border-color: #2e9dff;
+                    outline: 0;
+                }
+            }
+
+            span {
+                width: 160px;
+                margin-right: 20px;
+                text-align: center;
+            }
+        }
+
+        .btn-signup {
+            margin-top: 30px;
+            padding: 16px 24px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: rgba(46, 157, 255, 0.7);
+            color: white;
+            font-weight: 500;
+            box-shadow: 0 0 10px 0 #2e9dff;
+            border: 1px solid white;
+            letter-spacing: 2;
+        }
+    }
+}
+
+.signin-page-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    position: relative;
+    font-family: OpenSans;
+
+    .signin-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10%;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 44px;
+            font-weight: 400;
+            font-family: Conthrax;
+        }
+
+        .input-row {
+            display: flex;
+            justify-content: space-between;
+            width: 350px;
+            margin-bottom: 10px;
+            align-items: center;
+
+            input {
+                width: 100%;
+                padding-left: 10px;
+                background-color: rgba(22, 22, 22, 0.8);
+                position: relative;
+                z-index: 1;
+                height: 60px;
+                margin-bottom: 20px;
+                padding: 25px;
+                border: 1px solid hsla(0, 0%, 100%, 0.07);
+                border-radius: 10px;
+                background-color: rgba(22, 22, 22, 0.8);
+                -webkit-transition: border 400ms ease;
+                transition: border 400ms ease;
+                color: #fff;
+                font-size: 18px;
+                line-height: 1em;
+
+                &:focus {
+                    border-color: #2e9dff;
+                    outline: 0;
+                }
+            }
+
+            span {
+                width: 140px;
+                text-align: center;
+            }
+        }
+
+        .btn-signin {
+            margin-top: 30px;
+            padding: 16px 24px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: rgba(46, 157, 255, 0.7);
+            color: white;
+            font-weight: 500;
+            box-shadow: 0 0 10px 0 #2e9dff;
+            border: 1px solid white;
+            letter-spacing: 2;
+        }
+    }
+}
+
+.start-page-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-size: cover;
+    position: relative;
+    font-family: OpenSans;
+
+    .btn-start {
+        height: 250px;
+        cursor: pointer;
+    }
+}
+
+.logo-image {
+    top: 40px;
+    left: 40px;
+    width: 240px;
+    position: absolute;
+}
+
+#toSignUp, #toSignIn {
+    font-size: 20px;
+    margin-top: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.userinfo-container {
+    display: flex;
+    color: white;
+    word-break: break-word;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.buttons-container.auth {
+    width: auto !important;
+}
+
+@keyframes embedPlayerFramesOpen {
+    from {
+        height: 40px;
+        width: 120px;
+    }
+
+    to {
+        height: 124px;
+        width: 280px;
+    }
+}
+
+@keyframes embedPlayerFramesClose {
+    from {
+        height: 124px;
+        width: 280px;
+    }
+
+    to {
+        height: 40px;
+        width: 120px;
+    }
+}
+
+.embedPlayerContainerOpen {
+    // position: absolute;
+    // right: -300px;
+    // bottom: 40px;
+    // width: 320px;
+    // background-color: #333;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    animation-name: embedPlayerFramesOpen;
+    animation-duration: 1.5s;
+
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    height: 124px;
+    width: 280px;
+    overflow: hidden;
+    align-items: start;
+
+    @media screen and (min-width: 768px) {
+        bottom: 50px;
+    }
+
+    @media screen and (max-width: 492px) {
+        bottom: 20px;
+    }
+
+    @media screen and (max-height: 375px) {
+        bottom: 20px;
+    }
+}
+
+.embedPlayerContainerClose {
+    // position: absolute;
+    // right: -300px;
+    // bottom: 40px;
+    // width: 320px;
+    // background-color: #333;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    animation-name: embedPlayerFramesClose;
+    animation-duration: 1.5s;
+
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 120px;
+    overflow: hidden;
+    align-items: start;
+
+    @media screen and (min-width: 768px) {
+        bottom: 50px;
+    }
+
+    @media screen and (max-width: 492px) {
+        bottom: 20px;
+    }
+
+    @media screen and (max-height: 375px) {
+        bottom: 20px;
+    }
+}
+
+.embedPlayerContainer {
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 124px;
+    overflow: hidden;
+    align-items: start;
+
+    @media screen and (min-width: 768px) {
+        bottom: 50px;
+    }
+
+    @media screen and (max-width: 492px) {
+        bottom: 20px;
+    }
+
+    @media screen and (max-height: 375px) {
+        bottom: 20px;
+    }
+}
+
+#embedPlayerContainerButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100px;
+    opacity: 0;
+}

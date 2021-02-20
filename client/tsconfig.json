@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    // "noImplicitAny": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
+    //"jsx": "react",
+    "allowJs": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    // "noImplicitUseStrict":false,
+    "types": [
+      "babylonjs",
+      "babylonjs-gui",
+      "babylonjs-loaders",
+      "babylonjs-post-process",
+      "currency.js",
+      "node",
+      "node",
+      "jquery",
+      "tone"
+    ]
+  },
+  "lib": [
+    "es2018"
+  ],
+  "typeAcquisition": {
+      "enable": true
+  },
+  "include": [
+      "./src/**/*"
+  ]
+}
