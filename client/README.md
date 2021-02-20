@@ -22,6 +22,6 @@ Please run `yarn start`
 You have two choices when it come at how your preffer to run it. You can either use the command line or the build-in run command.
 
 ## View your application running
-Browse to [http://localhost:8080](http://localhost:8080)
+Browse to [https://localhost:8080](http://localhost:8080)
 
 ----
