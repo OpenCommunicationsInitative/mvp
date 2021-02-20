@@ -25,7 +25,7 @@ export class OciClientExperience extends Experience
         //this.priceDivisionManager.addPriceDivisionSetting(PriceDivision.OneDollar, oneDollarPriceDivisionSetting);
         //this.link = null
     
-        this.scene = new OCIClientScene("Bionic Trader",
+        this.scene = new OCIClientScene("OCI/P Client",
                                         this.canvas);
 
         this.start();

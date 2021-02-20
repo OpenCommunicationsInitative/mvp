@@ -97,7 +97,7 @@ const canvasRenderer = (event: Event) => {
 
         // canvasContainer.innerHTML = startTemplate;
         // const startHandler = new Start();
-        window.location.replace(window.location.href + '#/bionic-trader');
+        window.location.replace(window.location.href + '#/oci-client');
     }
 }
 

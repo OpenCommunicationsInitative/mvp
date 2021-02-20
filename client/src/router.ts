@@ -8,7 +8,7 @@ let templates = {};
 const leftMenuGenerator = () => {
     const myDiv: HTMLDivElement = document.getElementById(appDiv) as HTMLDivElement;
     myDiv.innerHTML = "<div class='navbar-title'>Example Scenes</div>";
-    const simpleSceneLink: HTMLAnchorElement = createLinkElement('BionicTrader', 'Go to BionicTrader', '#/BionicTrader');
+    const simpleSceneLink: HTMLAnchorElement = createLinkElement('BionicTrader', 'Go to BionicTrader', '#/OciClient');
     return myDiv.appendChild(simpleSceneLink);
 }
 
@@ -55,7 +55,7 @@ export const route = (path: string, template: any): void => {
 
 // Define the mappings route->template.
 route('/', 'template-MainView');
-route('/BionicTrader', 'template-BionicTrader');
+route('/OciClient', 'template-OciClient');
 route('/Signup', 'template-Signup');
 
 // Give the correspondent route (template) or fail

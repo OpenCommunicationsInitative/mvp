@@ -18,7 +18,6 @@
       "babylonjs-post-process",
       "currency.js",
       "node",
-      "node",
       "jquery",
       "tone"
     ]

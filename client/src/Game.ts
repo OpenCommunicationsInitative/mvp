@@ -266,11 +266,11 @@ export default class Game
             case '/':
                 // Handler for root route
                 break;
-            case '/bionic-trader':
+            case '/oci-client':
                 this.experience = new OciClientExperience('OCI Client Experience', this.canvas,true);
                 this.experience.load();
                 break;
-            case '/BionicTrader':
+            case '/OciClient':
                 this.experience = new OciClientExperience('OCI Client Experience', this.canvas,true);
                 this.experience.load();
                 break;
