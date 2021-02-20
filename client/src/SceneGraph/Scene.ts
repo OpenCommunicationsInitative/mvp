@@ -41,6 +41,7 @@ export class Scene implements IScene
         this.initScene(engine);
         this.setupCamera();
 
+        /*
         this.loadAssets();
 
         EventBus.Instance.eventHandler.subscribe((p, r) => {
@@ -48,6 +49,9 @@ export class Scene implements IScene
                 this.createBaseScene();
             }
         });
+        */
+
+        this.createBaseScene();
         
         window.addEventListener("beforeunload", () => {
             Logger.log("Scene : Detecting browser close. Destroying engine.");
