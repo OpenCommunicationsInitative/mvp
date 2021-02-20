@@ -53,11 +53,12 @@ export class Experience implements IExperience
     {
         let emptyScene: Scene = new Scene('emptyScene', this.canvas);
         SceneManager.Instance.LoadScene(emptyScene, this.canvas, ViewportPosition.Top);
+        
         AssetManager.Instance.init(emptyScene);
        
-       // AssetManager.Instance.load(this.assetsPath, () => {
+       AssetManager.Instance.load(this.assetsPath, () => {
             EventBus.Instance.emit("EXPERIENCE_ASSET_LOADED");
-      //  });
+        });
     }
 
     public unloadAssets()
