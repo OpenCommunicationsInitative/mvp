@@ -41,7 +41,6 @@ export class Scene implements IScene
         this.initScene(engine);
         this.setupCamera();
 
-        /*
         this.loadAssets();
 
         EventBus.Instance.eventHandler.subscribe((p, r) => {
@@ -49,7 +48,6 @@ export class Scene implements IScene
                 this.createBaseScene();
             }
         });
-        */
 
         this.createBaseScene();
         
@@ -88,6 +86,7 @@ export class Scene implements IScene
     {
         AssetManager.Instance.init(this);
         AssetManager.Instance.load(this.assetsPath, () => {
+            console.log('SCENE_ASSET_LOADED______________');
             EventBus.Instance.emit("SCENE_ASSET_LOADED");
         });
     }

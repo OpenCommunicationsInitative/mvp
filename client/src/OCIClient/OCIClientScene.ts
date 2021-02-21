@@ -90,8 +90,8 @@ export class OCIClientScene extends Scene //implements IMessageBusClient
     private sceneBaseUrl = "/";
 
     assetsPath: Array<Object> = [
-      //  {type: 'mesh', name:'simplecube', url: this.sceneBaseUrl + "/models/", fileName: 'simplecube.babylon'},
-      //  {type: 'mesh', name:'SmoothCube', url: this.sceneBaseUrl+ "/models/", fileName: 'SmoothCube.babylon'},
+       {type: 'mesh', name:'simplecube', url: this.sceneBaseUrl, fileName: 'simplecube2.babylon'},
+       {type: 'mesh', name:'SmoothCube', url: this.sceneBaseUrl, fileName: 'SmoothCube.babylon'},
     ];
 
     private stateMachine: StateMachine<OCICLientSceneContext, OCICLientSceneSchema, OCICLientSceneEventType>;
@@ -384,12 +384,12 @@ export class OCIClientScene extends Scene //implements IMessageBusClient
     {
         if (this.inspectorIsVisible)
         {
-            //this.bjsScene.debugLayer.hide();
+            this.bjsScene.debugLayer.hide();
             this.inspectorIsVisible = false;
         }
         else
         {
-            //this.bjsScene.debugLayer.show({overlay:true});
+            this.bjsScene.debugLayer.show({overlay:true});
             this.inspectorIsVisible = true;
         }
     }
