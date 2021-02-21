@@ -1,11 +1,11 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\james\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js start
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
 
 PATH: 
-  C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Oculus\Support\oculus-runtime;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Razer\ChromaBroadcast\bin;C:\Program Files\Razer\ChromaBroadcast\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Python38\Scripts\;C:\Python38\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\james\AppData\Local\Microsoft\WindowsApps;C:\Users\james\.dotnet\tools;C:\Program Files\nodejs\;C:\Users\james\AppData\Local\Microsoft\WindowsApps;C:\Users\james\AppData\Local\GitHubDesktop\bin;C:\Users\james\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\james\AppData\Roaming\npm;C:\Users\james\.dotnet\tools
+  C:\Python38\Scripts\;C:\Python38\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files (x86)\Yarn\bin\;C:\Users\DevMaster\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\PowerShell\6\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\DevMaster\.windows-build-tools\python27\;node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\DevMaster\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\DevMaster\AppData\Roaming\npm\node_modules\.bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\DevMaster\AppData\Local\Microsoft\WindowsApps;C:\Users\DevMaster\.dotnet\tools;C:\Users\DevMaster\AppData\Local\GitHubDesktop\bin;C:\Users\DevMaster\AppData\Local\Yarn\bin;C:\Users\DevMaster\AppData\Local\Microsoft\WindowsApps;C:\Users\DevMaster\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\DevMaster\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DevMaster\.dotnet\tools
 
 Yarn version: 
-  1.22.4
+  1.12.3
 
 Node version: 
   12.1.0
@@ -14,12 +14,8 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: C:\Users\james\Documents\GitHub\mvp\client\package.json: Unexpected token / in JSON at position 510
-      at JSON.parse (<anonymous>)
-      at C:\Users\james\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (C:\Users\james\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
-      at C:\Users\james\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
+  Error: https://registry.yarnpkg.com/typescript/-/typescript-3.9.9.tgz: unexpected end of file
+      at Zlib.zlibOnError [as onerror] (zlib.js:168:17)
 
 npm manifest: 
   {
@@ -39,7 +35,7 @@ npm manifest:
       "babylon-file-loader": "^0.2.1",
       "babylonjs": "^4.1.0",
       "babylonjs-gui": "^4.1.0",
-      //"babylonjs-inspector": "^4.1.0",
+      "babylonjs-inspector": "^4.1.0",
       "babylonjs-loaders": "^4.1.0",
       "babylonjs-materials": "^4.1.0",
       "babylonjs-post-process": "^4.1.0",
