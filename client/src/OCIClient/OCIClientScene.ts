@@ -10,6 +10,7 @@ import { Scene } from '../SceneGraph/Scene';
 import { UserPanel } from './Elements/UserPanel';
 import { ThemeController } from './Elements/Theme/ThemeController';
 import { MorningTheme } from './Elements/Theme/MorningTheme';
+import { VoiceClient } from './Elements/VoiceClient';
 
 enum MenuPosition {
     TOP_LEFT = 0,
@@ -72,6 +73,7 @@ export class OCIClientScene extends Scene //implements IMessageBusClient
     hemisphericLight : bjs.HemisphericLight | undefined;
 
     userPanel : UserPanel | undefined;
+    voiceClient : VoiceClient | undefined;
 
     private cameraHomeAlpha: number = -Math.PI / 2;
     private cameraHomeBeta: number = Math.PI / 2;
@@ -294,6 +296,13 @@ export class OCIClientScene extends Scene //implements IMessageBusClient
         this.userPanel = new UserPanel("User Panel", 0, 0, 0, this);
         this.AddSceneElement(this.userPanel);
 
+        this.voiceClient = new VoiceClient("Voice Client", 0, 0, 0, this);
+        this.AddSceneElement(this.voiceClient);
+
+        this.voiceClient.connect();
+
+        this.voiceClient.disconnect();
+
 
     
         /*
@@ -384,12 +393,12 @@ export class OCIClientScene extends Scene //implements IMessageBusClient
     {
         if (this.inspectorIsVisible)
         {
-            //this.bjsScene.debugLayer.hide();
+            this.bjsScene.debugLayer.hide();
             this.inspectorIsVisible = false;
         }
         else
         {
-            //this.bjsScene.debugLayer.show({overlay:true});
+            this.bjsScene.debugLayer.show({overlay:true});
             this.inspectorIsVisible = true;
         }
     }

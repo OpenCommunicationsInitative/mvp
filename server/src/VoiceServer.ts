@@ -1,0 +1,12 @@
+
+
+
+class VoiceServer
+{
+
+    constructor()
+    {
+       
+
+    }
+}

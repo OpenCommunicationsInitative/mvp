@@ -10,7 +10,7 @@ export class VectorFieldCell
     public width : number =0;
     public height : number =0;
     public color : GLSGColor = GLSGColor.Blue;
-    public price : currency = currency(0);
+    public price : currency;// = currency(0);
 
     constructor(public layerType : VectorFieldLayerType)
     {
